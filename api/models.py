@@ -19,7 +19,6 @@ class ConvNN(nn.Module):
             nn.ReLU(),
             nn.Dropout(p=0.5),
             nn.Linear(512, 1),
-            nn.ReLU()
         )
 
     def forward(self, x):
